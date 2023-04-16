@@ -24,12 +24,12 @@ def send_click():
     st.session_state.response  = index.query(st.session_state.prompt)
 
 index = None
-st.title("Yeyu's Doc Chat")
+st.title("LIDA's Chatbot")
 
 sidebar_placeholder = st.sidebar.container()
 #uploaded_file = st.file_uploader("Choose a file")
 # 设置密码
-password = "123456"
+password = "qwe."
 
 # 在侧边栏添加一个文本框，用于输入密码
 password_placeholder = st.sidebar.empty()
@@ -44,7 +44,7 @@ if password_input == password:
     # 其他操作...
 else:
     # 密码错误，禁止上传文件
-    st.warning("您好，我是丽达小丽，见到你很高兴！")
+    st.warning("您好，我是丽宝，很高兴见到您！")
 
 
 
