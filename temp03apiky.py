@@ -24,7 +24,7 @@ def send_click():
     st.session_state.response  = index.query(st.session_state.prompt)
 
 index = None
-st.title("LIDA's Chatbot")
+st.title("Lida's Chatbot")
 
 sidebar_placeholder = st.sidebar.container()
 #uploaded_file = st.file_uploader("Choose a file")
