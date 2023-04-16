@@ -73,7 +73,7 @@ if uploaded_file is not None:
     sidebar_placeholder.subheader(uploaded_file.name)
     sidebar_placeholder.write(documents[0].get_text()[:10000]+'...')
 
-    llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003"))
+    llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.1, max_tokens=1000, model_name="text-davinci-003"))
 
     max_input_size = 4096
     num_output = 256
