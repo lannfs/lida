@@ -1,13 +1,8 @@
 import os
-import openai
 import streamlit as st
 
 # 从系统环境变量中获取 API 密钥
 os.environ["OPENAI_API_KEY"] = st.secrets["KEY"]
-
-
-
-
 
 from llama_index import download_loader
 from llama_index.node_parser import SimpleNodeParser
