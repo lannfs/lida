@@ -1,2 +1,0 @@
-# lida
-lidachatbot
